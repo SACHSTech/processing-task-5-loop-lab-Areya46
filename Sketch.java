@@ -73,7 +73,7 @@ public class Sketch extends PApplet {
 
    
   public void draw_section1(){
-     int intX = 0;
+    int intX = 0;
     int intY = 0;
 
     for(int intRow = 0; intRow < 30; intRow++){
@@ -93,24 +93,7 @@ public class Sketch extends PApplet {
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
   public void draw_section2(){
-    
-   for (int intRow = 0; intRow < 30; intRow++){
-    for (int intColumn = 0; intColumn < 30; intColumn++){
-      int intX = (intColumn * 10) + 303;
-      int intY = (intRow * 10) + 303;
-      if (intColumn % 2 == 0){
-        fill(225);
-      }
-      else {
-        fill(0, 0, 0);
-      }
-        noStroke ();
-        rect(intX, intY, 4, 4);
-      
-
-    }
-   }
-
+  
   }
 
   /**
@@ -119,45 +102,12 @@ public class Sketch extends PApplet {
    */
   public void draw_section3(){
 
-    for (int intRow = 0; intRow < 30; intRow++){
-      for (int intColumn = 0; intColumn < 30; intColumn++){
-        int intX = (intColumn * 10) + 603;
-        int intY = (intRow * 10) + 303;
-        if (intRow % 2 == 0){
-          fill(225);
-        }
-        else {
-          fill(0, 0, 0);
-        }
-          noStroke ();
-          rect(intX, intY, 4, 4);
-        
-  
-      }
-     }  
-
   }
 
   /**
    * Use the modulus operator and just one 'if' statement to select the color.
    */
   public void draw_section4(){
-
-    for (int intRow = 0; intRow < 30; intRow++){
-      for (int intColumn = 0; intColumn < 30; intColumn++){
-        int intX = (intColumn * 10) + 903;
-        int intY = (intRow * 10) + 303;
-        if ((intColumn % 2 == 0) && (intRow % 2 == 0)){
-          fill(225);
-        }
-        else {
-          fill(0, 0, 0);
-        }
-          noStroke ();
-          rect(intX, intY, 4, 4);   
-  
-      }
-     }  
 
   }
 
@@ -179,10 +129,5 @@ public class Sketch extends PApplet {
   public void draw_section8(){
 
   }
-
-
-
-
-
 
 }
