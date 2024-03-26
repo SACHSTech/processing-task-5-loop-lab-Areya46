@@ -116,7 +116,22 @@ public class Sketch extends PApplet {
    * Don't use multiple 'if' statements.
    */
   public void draw_section3(){
-
+    
+    for (int intRow = 0; intRow < 30; intRow++){
+      for (int intColumn = 0; intColumn < 30; intColumn++){
+        int intX = (intColumn * 10) + 603;
+        int intY = (intRow * 10) + 303;
+        if (intRow % 2 == 0){
+          fill(225);
+        }
+        else {
+          fill(0, 0, 0);
+        }
+          noStroke ();
+          rect(intX, intY, 4, 4);
+      }
+     }  
+     
   }
 
   /**
